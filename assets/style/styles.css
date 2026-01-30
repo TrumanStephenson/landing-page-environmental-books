@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FBFBFB;
+  margin: 0;
+  padding: 20px;
+}
+
+.header-shaded {
+  color: green;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-left: 250px;
+  margin-top: 36.5px;
+}
+
+/* Centering the shelf and book */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Shelf style */
+.shelf {
+  width: 80%; 
+  max-width: 1100px; 
+  height: 40vh; 
+  background-image: url('https://cdn11.bigcommerce.com/s-5k9p6e0vik/images/stencil/1024x1024/products/703/5147/01-glenn-mantel-front-NN-whiteoak-jd__34093.1652381548.jpg?c=2');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex; 
+  justify-content: space-around; 
+  padding-bottom: 370px; 
+}
+
+/* Book style */
+.book {
+  width: 20%;
+  max-width: 150px;
+  height: auto; 
+}
+#books {
+  margin-left: -20px;
+}
+.book img {
+  width: 115%;
+  height: 100%;
+  object-fit: contain; 
+}
+.book2, .book3 {
+  width: 20%; 
+  max-width: 150px;
+  height: auto; 
+}
+.book2 img, .book3 img {
+  width: 115%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.price-tag {
+  display: inline-block;
+  padding: 10px;
+  background: linear-gradient(75deg, yellow, orange);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(55%) translateY(-73%);
+}
+.price-tag a {
+  text-decoration: none;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Newspaper-style layout */
+.newspaper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 125, 120, 0.5);
+}
+.newspaper h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.newspaper p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.newspaper a {
+  color: #007bff; 
+  text-decoration: none;
+}
